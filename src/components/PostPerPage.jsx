@@ -8,10 +8,11 @@ export default function PostPerPage({handlePostPerPage, paginate}) {
         handlePostPerPage(e.target.value);
     }
   return (
-    <div>
+    <div className='my-5'>
 
-            <label htmlFor="">Select the post per page: </label>
-            <select name="" id="" onChange={changePostPerPage}>
+            <label htmlFor="">Select the number of post per page: </label>
+            <select name="" id="" onChange={changePostPerPage}
+            className='border border-blue-500'>
                 <option value="5" >5</option>
                 <option value="10" >10</option>
                 <option value="15" >15</option>

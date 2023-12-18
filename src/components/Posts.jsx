@@ -13,12 +13,15 @@ export default function Posts({posts, currentPage, postPerPage}) {
             
             var arr = [];
             const startPageIndex = (currentPage*postPerPage);  
-            const endPageIndex = startPageIndex+postPerPage;
-         
-            for(let i=startPageIndex;i<(endPageIndex);i++){
+            const endPageIndex = (parseInt(startPageIndex)+parseInt(postPerPage));
+            console.log('start page index',startPageIndex);
+            console.log('end page index',endPageIndex);
+
+
+            for(let i=startPageIndex;i<endPageIndex;i++){
                 arr.push(posts[i]);
             }
-    
+
             console.log('after page change use effect')
             setCurrentPost(arr);
             console.log('arr: ',arr);
@@ -29,12 +32,11 @@ export default function Posts({posts, currentPage, postPerPage}) {
     }, [currentPage, postPerPage]);
     
   return currentPost.length==0 ? <h1>loading...</h1>:(
-    <div>
+    <div className='w-1/2 m-auto border border-gray-500'>
 
-        current page- {currentPage}
         {currentPost.map((post, index)=>(
-        <div className='border border-gray-400' key={index}>
-          - {post?.id} - {post?.title} - {index}
+        <div className='border border-gray-400 p-1 pl-5' key={index}>
+           {post?.id} - {post?.title}
         </div>
       ))}
 

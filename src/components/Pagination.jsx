@@ -13,19 +13,18 @@ export default function Pagination({postPerPage, totalPost, setCurrentPage, pagi
     <div>
 
 
-        post perpage - {postPerPage}
+        {/* post perpage - {postPerPage}
         total post - {totalPost}
-        pages - {pages}
+        pages - {pages} */}
 
-
-        <div className="flex justify-center self-center border border-red-500 w-[100%] my-5">
+        <div className="flex justify-center self-center w-[100%] my-5">
 
             {Array.from({ length: pages }).map((item,index)=>(
-                <div className='flex border border-green-500 px-2 py-1'
+                <div className='flex border border-gray-500 px-2 py-1 cursor-pointer'
                 key={index}
                 id={index}
                 onClick={(e)=>{paginate(e.target.id)}}>
-                    {index}
+                    {index+1}
                 </div>
             ))}
 
