@@ -14,7 +14,7 @@
 
 ## Overview
 
-The React Pagination Project is a web application built with React, Vite, and Tailwind CSS. It fetches data(100 posts) from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/) in the `App.jsx` file and sends the modified data to other components for display. The project includes `PostPerPage.jsx` to set the number of posts per page, `Pagination.jsx` to display pagination, and `Post.jsx` to display the modified data.
+The React Pagination Project is a web application built with React, Vite, and Tailwind CSS. It fetches data(100 posts) from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/) in the `App.jsx` file and sends the modified data to other components for display. The project includes `PostPerPage.jsx` to set the number of posts per page, `Pagination.jsx` to display pagination, and `Posts.jsx` to display the modified data.
 
 ## Features
 
@@ -54,7 +54,9 @@ The React Pagination Project is a web application built with React, Vite, and Ta
 
 ## Screenshots
 
-![React Post Viewer Screenshot](./screenshot.png)
+![image](https://github.com/utkarshgupta04092003/6-react-pagination/assets/63789702/72aca084-4785-49ec-af41-b8af8b5d739c)
+
+![image](https://github.com/utkarshgupta04092003/6-react-pagination/assets/63789702/ad38a173-2194-4268-9b94-15d16deac2a3)
 
 ## Project Structure
 
