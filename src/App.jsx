@@ -9,7 +9,7 @@ export default function App() {
   const [totalPost, setTotalPost] = useState(0);
   const [postPerPage, setPostPerPage] = useState(0);
   const [currentPage, setCurrentPage] = useState(0);
-  const count = 5;
+  const count = 10;
 
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
